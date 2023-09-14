@@ -28,3 +28,44 @@ function playNote(key) {
     key.classList.remove('active')
   })
 }
+
+/*
+// Smiley button that change backgroundcolor
+var count = 1;
+const smileyButton = document.querySelector(".smiley-button");
+smileyButton.addEventListener("click", function () { 
+  count++;
+  if (count%2==0){
+    document.body.style.backgroundColor = "#b80d0d";
+    smileyButton onclick=this.smileyButton () {
+      this.smileyButton = style.backgroundColor "#143F6B";
+    }
+  }
+  else { 
+    document.body.style.backgroundColor = "#143F6B";
+  }
+  
+  
+  /*
+  if (smileyButton) {
+    face.style.backgroundColor = "#143F6B";
+  }
+  */
+
+  //if (smileyButton.repeat) return
+  
+  /*alert("Smiley-knappen klickades!");*/
+});*/
+
+var count = 1;
+const smileyButton = document.querySelector(".smiley-button");
+smileyButton.addEventListener("click", function () {
+  count++;
+  if (count % 2 == 0) {
+    document.body.style.backgroundColor = "#b80d0d"; // Ändra bakgrundsfärgen på hela sidan till röd
+    smileyButton.style.backgroundColor = "#143F6B";   // Ändra knappens bakgrundsfärg till blå
+  } else {
+    document.body.style.backgroundColor = "#143F6B";  // Återställ bakgrundsfärgen på hela sidan till blå
+    smileyButton.style.backgroundColor = "";           // Återställ knappens bakgrundsfärg
+  }
+});

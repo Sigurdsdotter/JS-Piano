@@ -41,3 +41,65 @@ body {
 .black.active {
   background-color: #333;
 }
+
+.smiley-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.smiley {
+  position: fixed;
+  top: 35px;
+  right: 35px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.face {
+  background-color: #b80d0d;
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+}  
+
+.mouth {
+  position: absolute;
+  width: 18px;
+  height: 7px;
+  border: 2px solid #222;
+  border-top: 0;
+  background: transparent; /* Använd transparent bakgrundsfärg */
+  border-radius: 0 0 12px 12px / 0 0 9px 9px; /* Använd border-radius för att skapa rundning */
+  top: 20px;
+  left: 7px;
+}
+
+.left-eye {
+  background-color: #222;
+  width: 4px;
+  height: 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  right: 19px;
+}
+
+.right-eye {
+  background-color: #222;
+  width: 4px;
+  height: 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.smiley-button:active .smiley {
+  transform: scale(0.9); /* Förminskar smileyn när knappen klickas på */
+}
+
+.smiley-button:active  {
+  background-color: #143F6B; 
+}
